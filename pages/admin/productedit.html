@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ADMIN | Edit Product</title>
+    <link rel="stylesheet" href="../../style/adminstyle.css" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="../../images/favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="../../images/favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="../../images/favicon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="favicon/site.webmanifest" />
+    <script src="../../js/script.js"></script>
+  </head>
+
+  <body>
+    <div class="first">
+      <div class="nav">
+        <div class="header-left">
+          <a href="../../index.html">
+            <img src="../../images/logo-.png" alt="" />
+          </a>
+        </div>
+
+        <div class="mid">
+          <ul>
+            <li><a class="active" href="product.html">Product</a></li>
+            <li><a href="user.html">User</a></li>
+          </ul>
+        </div>
+
+        <div class="left">
+          <div class="com-info">
+            <img
+              src="../../images/user/profile-pic.png"
+              alt="image"
+              class="icon"
+              style="height: 4rem; width: 4rem"
+            />
+            <div class="info">
+              <p style="margin-top: 5px">Sudip Sigdel</p>
+              <p>Admin</p>
+            </div>
+          </div>
+
+          <div class="logout">
+            <ul>
+              <li>
+                <a href="../../pages/profile.html"
+                  ><img
+                    src="../../images/icons/logout.png"
+                    alt="logout"
+                    srcset=""
+                    class="icon"
+                /></a>
+                <p>Log Out</p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <p class="common-text">Edit Product</p>
+
+      <div class="main">
+        <div class="form">
+          <form>
+            <input type="hidden" name="product_id" />
+            <div class="addproduct-form">
+              <div class="row">
+                <div class="column">
+                  <label for="name">Product Name</label>
+                  <input
+                    type="text"
+                    name="product_name"
+                    placeholder="Enter Product Name"
+                    value="Bag"
+                    required
+                  />
+                </div>
+
+                <div class="column">
+                  <label for="type">Product Type</label>
+                  <input
+                    type="text"
+                    name="product_type"
+                    placeholder="Enter Product Type"
+                    value="Side Bag"
+                    required
+                  />
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="column">
+                  <label for="category">Category</label>
+                  <input
+                    type="text"
+                    name="category"
+                    placeholder="Enter Category"
+                    value="Bags"
+                    required
+                  />
+                </div>
+
+                <div class="column">
+                  <label for="rating">Rating</label>
+                  <input type="text" name="rating" value="3" required />
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="column">
+                  <label for="stock">Stock</label>
+                  <input
+                    type="text"
+                    name="stock"
+                    placeholder="Enter Stock"
+                    value="25"
+                    required
+                  />
+                </div>
+
+                <div class="column">
+                  <label for="price">Price</label>
+                  <input
+                    type="text"
+                    name="price"
+                    placeholder="Enter Price (Rs)"
+                    value="200"
+                    required
+                  />
+                </div>
+              </div>
+
+              <div class="row">
+                <!-- can add a column here -->
+
+                <div class="column">
+                  <div>
+                    <label for="image">Upload Image</label>
+                    <input
+                      type="file"
+                      name="product_image"
+                      id=""
+                      value=""
+                      accept=".jpg, .png"
+                      style="border: none"
+                    />
+                  </div>
+                </div>
+              </div>
+
+              <center>
+                <button class="common-button" type="submit">Update</button>
+              </center>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

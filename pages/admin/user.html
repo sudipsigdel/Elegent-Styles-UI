@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ADMIN | User</title>
+    <link rel="stylesheet" href="../../style/adminstyle.css" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="../../images/favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="../../images/favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="../../images/favicon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="../../images/favicon/site.webmanifest" />
+    <script src="../../js/script.js"></script>
+  </head>
+
+  <body>
+    <div class="first">
+      <div class="nav">
+        <div class="header-left">
+          <a href="../../index.html">
+            <img src="../../images/logo-.png" alt="" />
+          </a>
+        </div>
+
+        <div class="mid">
+          <ul>
+            <li><a href="product.html">Product</a></li>
+            <li><a class="active" href="#">User</a></li>
+            <li><a href="order.html">Order</a></li>
+          </ul>
+        </div>
+
+        <div class="left">
+          <div class="com-info">
+            <img
+              src="../../images/user/profile-pic.png"
+              alt="image"
+              class="icon"
+              style="height: 4rem; width: 4rem"
+            />
+            <div class="info">
+              <p style="margin-top: 5px">Sudip Sigdel</p>
+              <p>Admin</p>
+            </div>
+          </div>
+          <div class="logout">
+            <ul>
+              <li>
+                <a href="../profile.html"
+                  ><img
+                    src="../../images/icons/logout.png"
+                    alt="image"
+                    srcset=""
+                    class="icon"
+                /></a>
+                <p>Log Out</p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="main">
+        <div class="form-container">
+          <div class="form form-add-role">
+            <p class="common-text-ad">Add Role</p>
+            <form>
+              <div class="addproduct-form">
+                <div class="row">
+                  <div class="column">
+                    <label for="name">Enter email</label>
+                    <input type="hidden" name="method" value="add" />
+                    <input
+                      type="email"
+                      name="add_role"
+                      placeholder="Enter email of the user"
+                      required
+                    />
+                    <button class="common-button" type="submit" name="login">
+                      Make Admin
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </form>
+          </div>
+
+          <div class="form form-remove-role">
+            <p class="common-text-ad">Remove Role</p>
+            <form>
+              <div class="addproduct-form">
+                <div class="row">
+                  <div class="column">
+                    <label for="name">Enter Email</label>
+                    <input type="hidden" name="method" value="remove" />
+                    <input
+                      type="email"
+                      name="remove_role"
+                      placeholder="Enter email of the admin"
+                      required
+                    />
+                    <button class="common-button" type="submit" name="login">
+                      Remove Admin
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+
+        <div class="second">
+          <p class="common-text-ad">Admin Details</p>
+          <table>
+            <thead>
+              <tr>
+                <th>Name</th>
+                <th>Address</th>
+                <th>Email</th>
+                <th>Phone</th>
+                <th>Image</th>
+              </tr>
+            </thead>
+
+            <tbody>
+              <tr>
+                <td>Sudip Sigdel</td>
+                <td>Kathmandu, Nepal</td>
+                <td>sudip@elegentstyles.com</td>
+                <td>9800000000</td>
+                <td>
+                  <img src="../../images/user/profile-pic.png" alt="Admin 1" />
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <div class="second">
+      <p class="common-text">User Details</p>
+      <table>
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Address</th>
+            <th>Email</th>
+            <th>Phone</th>
+            <th>Image</th>
+            <th>Action</th>
+          </tr>
+        </thead>
+
+        <tbody>
+          <tr>
+            <td>Anukul Karki</td>
+            <td>Kadaghari</td>
+            <td>anukul@gmail.com</td>
+            <td>9800000001</td>
+            <td>
+              <img src="../../images/user/anukul.jpg" alt="User 1" />
+            </td>
+            <td>
+              <form>
+                <input type="hidden" name="action" />
+                <button class="deleteButton" type="submit">Delete</button>
+              </form>
+            </td>
+          </tr>
+
+          <tr>
+            <td>Bhupendra Neupane</td>
+            <td>Baneshwor</td>
+            <td>bhupendra@gmail.com</td>
+            <td>9800000002</td>
+            <td>
+              <img src="../../images/user/bhupi.jpg" alt="User 2" />
+            </td>
+            <td>
+              <form>
+                <input type="hidden" name="action" />
+                <button class="deleteButton" type="submit">Delete</button>
+              </form>
+            </td>
+          </tr>
+
+          <tr>
+            <td>Sarbagya Shahi</td>
+            <td>Pepsocola</td>
+            <td>sarbagya@gmail.com</td>
+            <td>9800000003</td>
+            <td>
+              <img src="../../images/user/sarbagya.jpg" alt="User 3" />
+            </td>
+            <td>
+              <form>
+                <input type="hidden" name="action" />
+                <button class="deleteButton" type="submit">Delete</button>
+              </form>
+            </td>
+          </tr>
+
+          <tr>
+            <td>Sudip Sigdel</td>
+            <td>Kalimati</td>
+            <td>sudip@gmail.com</td>
+            <td>9800000004</td>
+            <td>
+              <img src="../../images/user/sudip.jpg" alt="User 4" />
+            </td>
+            <td>
+              <form>
+                <input type="hidden" name="action" />
+                <button class="deleteButton" type="submit">Delete</button>
+              </form>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </body>
+</html>

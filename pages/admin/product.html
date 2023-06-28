@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ADMIN | Product</title>
+    <link rel="stylesheet" href="../../style/adminstyle.css" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="../../images/favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="../../images/favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="../../images/favicon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="../../images/favicon/site.webmanifest" />
+    <script src="../../js/script.js"></script>
+  </head>
+
+  <body>
+    <div class="first">
+      <div class="nav">
+        <div class="header-left">
+          <a href="../../index.html">
+            <img src="../../images/logo-.png" alt="" />
+          </a>
+        </div>
+
+        <div class="mid">
+          <ul>
+            <li><a class="active" href="#">Product</a></li>
+            <li><a href="user.html">User</a></li>
+            <li><a href="order.html">Order</a></li>
+          </ul>
+        </div>
+
+        <div class="left">
+          <div class="com-info">
+            <img
+              src="../../images/user/profile-pic.png"
+              alt="image"
+              class="icon"
+              style="height: 4rem; width: 4rem"
+            />
+            <div class="info">
+              <p style="margin-top: 5px">Sudip Sigdel</p>
+              <p>Admin</p>
+            </div>
+          </div>
+          <div class="logout">
+            <ul>
+              <li>
+                <a href="../profile.html"
+                  ><img
+                    src="../../images/icons/logout.png"
+                    alt="logout"
+                    srcset=""
+                    class="icon"
+                /></a>
+                <p>Log Out</p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <p class="common-text">Add Product</p>
+
+      <div class="main">
+        <div class="form">
+          <form>
+            <div class="addproduct-form">
+              <div class="row">
+                <div class="column">
+                  <label for="name">Product Name</label>
+                  <input
+                    type="text"
+                    name="product_name"
+                    placeholder="Enter Product Name"
+                    required
+                  />
+                </div>
+
+                <div class="column">
+                  <label for="type">Product Type</label>
+                  <input
+                    type="text"
+                    name="product_type"
+                    placeholder="Enter Product Type"
+                    required
+                  />
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="column">
+                  <label for="category">Category</label>
+                  <input
+                    type="text"
+                    name="category"
+                    placeholder="Enter Category"
+                    required
+                  />
+                </div>
+
+                <div class="column">
+                  <label for="rating">Rating</label>
+                  <input
+                    type="number"
+                    name="rating"
+                    placeholder="Rate the product (1-5)"
+                    min="1"
+                    max="5"
+                    required
+                  />
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="column">
+                  <label for="stock">Stock</label>
+                  <input
+                    type="number"
+                    name="stock"
+                    placeholder="Enter Stock"
+                    required
+                  />
+                </div>
+
+                <div class="column">
+                  <label for="price">Price</label>
+                  <input
+                    type="number"
+                    name="price"
+                    placeholder="Enter Price (Rs)"
+                    required
+                  />
+                </div>
+              </div>
+
+              <div class="row">
+                <!-- can add a column here -->
+
+                <div class="column">
+                  <div>
+                    <label for="image">Upload Image</label>
+
+                    <input
+                      type="file"
+                      name="product_image"
+                      id=""
+                      required
+                      accept=".jpg, .png"
+                      style="border: none"
+                    />
+                  </div>
+                </div>
+              </div>
+
+              <center>
+                <button class="common-button" type="submit" name="login">
+                  Add Product
+                </button>
+              </center>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <div class="second">
+      <p class="common-text">Product Details</p>
+      <table>
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Type</th>
+            <th>Category</th>
+            <th>Rating</th>
+            <th>Stock</th>
+            <th>Price</th>
+            <th>Image</th>
+            <th>Action</th>
+          </tr>
+        </thead>
+
+        <tbody>
+          <tr>
+            <td>Bag</td>
+            <td>Side Bag</td>
+            <td>Bags</td>
+            <td>
+              <img src="../../images/icons/3star.png" alt="3" />
+            </td>
+            <td>25</td>
+            <td>Rs. 200</td>
+            <td>
+              <img src="../../images/product/1.png" alt="Product 1" />
+            </td>
+            <td>
+              <form action="productedit.html">
+                <input type="hidden" name="edit" />
+                <button style="background: #4caf50" class="editButton">
+                  Edit
+                </button>
+              </form>
+
+              <form>
+                <input type="hidden" name="delete" />
+                <button class="deleteButton">Delete</button>
+              </form>
+            </td>
+          </tr>
+
+          <tr>
+            <td>Bag</td>
+            <td>Side Bag</td>
+            <td>Bags</td>
+            <td>
+              <img src="../../images/icons/3star.png" alt="3" />
+            </td>
+            <td>25</td>
+            <td>Rs. 200</td>
+            <td>
+              <img src="../../images/product/1.png" alt="Product 1" />
+            </td>
+            <td>
+              <form action="productedit.html">
+                <input type="hidden" name="edit" />
+                <button style="background: #4caf50" class="editButton">
+                  Edit
+                </button>
+              </form>
+
+              <form>
+                <input type="hidden" name="delete" />
+                <button class="deleteButton">Delete</button>
+              </form>
+            </td>
+          </tr>
+
+          <tr>
+            <td>Bag</td>
+            <td>Side Bag</td>
+            <td>Bags</td>
+            <td>
+              <img src="../../images/icons/3star.png" alt="3" />
+            </td>
+            <td>25</td>
+            <td>Rs. 200</td>
+            <td>
+              <img src="../../images/product/1.png" alt="Product 1" />
+            </td>
+            <td>
+              <form action="productedit.html">
+                <input type="hidden" name="edit" />
+                <button style="background: #4caf50" class="editButton">
+                  Edit
+                </button>
+              </form>
+
+              <form>
+                <input type="hidden" name="delete" />
+                <button class="deleteButton">Delete</button>
+              </form>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </body>
+</html>

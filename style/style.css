@@ -34,30 +34,32 @@ ul {
     list-style: none;
 }
 
+.header-left {
+    flex-basis: 33.33%;
+    align-items: center;
+    justify-content: flex-start;
+}
+
 .header-left img {
-    max-width: 75%;
+    width: 70%;
     height: auto;
 }
 
 .header-center {
-    color: #000000;
-}
-
-.header-right {
     width: 40%;
 }
 
-.header-right ul {
+.header-center ul {
     display: flex;
     justify-content: space-evenly;
     list-style: none;
 }
 
-.header-right ul li {
+.header-center ul li {
     text-align: center;
 }
 
-.header-right .icon {
+.header-center .icon {
     width: 2rem;
     height: auto;
 }
@@ -93,7 +95,6 @@ ul {
     margin-bottom: 2%;
 }
 
-
 /* Body */
 .main {
     display: flex;
@@ -109,7 +110,7 @@ ul {
 }
 
 .categories {
-    padding-left: 2rem;
+    padding: 0 2rem;
     margin-bottom: 10%;
     border: 2px solid saddlebrown;
 }
@@ -132,6 +133,7 @@ ul {
     width: 78%;
     margin: 1rem 0;
 }
+
 
 /* Product Section */
 .outlet {
@@ -200,7 +202,7 @@ ul {
     background-color: rgb(243, 158, 97);
     text-align: center;
     cursor: pointer;
-    width: 100%;
+    width: 90%;
     font-size: 18px;
 }
 
@@ -415,61 +417,6 @@ ul {
 }
 
 
-
-@media (max-width: 1200px) {
-
-    .login-left {
-        flex: 100%;
-        margin-top: 10%;
-    }
-
-    .Signup-left {
-        display: none;
-    }
-
-    .login-right {
-        display: none;
-    }
-
-    .Signup-right {
-        display: inline-block;
-
-        margin-top: 5%;
-    }
-
-    .login-form {
-        margin: 10%;
-        margin-top: 0;
-        width: 80%;
-    }
-
-    .login-form input {
-        width: 100%;
-    }
-
-    .common-text {
-        font-size: 30px;
-        margin-top: 5%;
-    }
-
-    .common-button {
-        width: 102%;
-        margin-top: 2%;
-        margin-bottom: 5%;
-    }
-
-    .Redirect {
-        margin-top: -20px;
-    }
-
-    .term {
-        margin-top: 15;
-    }
-
-
-}
-
-
 .delete_txt {
     display: block;
     align-items: center;
@@ -530,4 +477,187 @@ ul {
     padding: 20px;
     border-radius: 5px;
     z-index: 1000;
+}
+
+
+
+@media (max-width: 1200px) {
+
+    .login-left {
+        flex: 100%;
+        margin-top: 10%;
+    }
+
+    .Signup-left {
+        display: none;
+    }
+
+    .login-right {
+        display: none;
+    }
+
+    .Signup-right {
+        display: inline-block;
+
+        margin-top: 5%;
+    }
+
+    .login-form {
+        margin: 10%;
+        margin-top: 0;
+        width: 80%;
+    }
+
+    .login-form input {
+        width: 100%;
+    }
+
+    .common-text {
+        font-size: 30px;
+        margin-top: 5%;
+    }
+
+    .common-button {
+        width: 102%;
+        margin-top: 2%;
+        margin-bottom: 5%;
+    }
+
+    .Redirect {
+        margin-top: -20px;
+    }
+
+    .term {
+        margin-top: 15;
+    }
+
+}
+
+
+@media (max-width: 1076px) {
+
+    .header {
+        flex-direction: column;
+        margin-bottom: 1rem;
+    }
+
+    .header-left img {
+        width: 100%;
+        align-items: center;
+    }
+
+    .header-center {
+        flex-basis: 100%;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    .header-right {
+        flex-basis: 100%;
+        justify-content: center;
+        margin-top: 10px;
+    }
+
+    #search-box {
+        width: 70%;
+    }
+
+    #search-btn {
+        width: 20%;
+    }
+
+    .main,
+    .main-right {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin: 0;
+    }
+
+    .main-left {
+        width: fit-content;
+    }
+
+    .categories {
+        padding-right: 2rem;
+    }
+
+    .footer {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .footer-left,
+    .footer-right,
+    .footer-center {
+        width: 100%;
+        margin-top: 2rem;
+        text-align: justify;
+    }
+
+    .tc {
+        text-align: center;
+    }
+
+}
+
+
+@media (max-width: 524px) {
+    .header {
+        flex-direction: column;
+        margin-bottom: 1rem;
+    }
+
+    .header-left {
+        width: 100%;
+    }
+
+    .header-left img {
+        width: 100%;
+
+    }
+
+    .header-center {
+        flex-basis: 100%;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    .header-right {
+        flex-basis: 100%;
+        justify-content: center;
+        margin-top: 10px;
+    }
+
+    .main,
+    .main-left,
+    .main-right {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin: 0;
+    }
+
+    .home,
+    .categories {
+        margin-bottom: 1rem;
+    }
+
+    .footer {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .footer-left,
+    .footer-right,
+    .footer-center {
+        width: 100%;
+        margin-top: 2rem;
+        text-align: justify;
+    }
+
+    .tc {
+        text-align: center;
+    }
+
 }
